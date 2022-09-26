@@ -39,7 +39,7 @@ if simple_poly:
     except:
         plt.plot(x, SimpleFunction(x))
 else:
-    order = int(input("Input polynomial order:"))
+    order = int(input("Input polynomial order:"))+1
     coeffs = [eval(input(f"term #{i + 1}: ")) for i in range(order)]
     plt.plot(x, PolyCoefficients(x, coeffs))
 
